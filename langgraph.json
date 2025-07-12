@@ -1,0 +1,14 @@
+{
+"dependencies" : [
+    "ipykernel>=6.29.5",
+    "langchain-groq>=0.3.6",
+    "langgraph>=0.5.2",
+    "langgraph-cli[inmem]>=0.3.4",
+    "pytest>=8.4.1",
+    "python-dotenv>=1.1.1"
+],
+"graphs": {
+        "my_agent": "./agent.py:app"
+    },
+    "env": "./.venv"
+}

@@ -3,7 +3,9 @@ from typing import TypedDict, Annotated, List
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from IPython.display import Image, display
-from langgraph.graph import StateGraph, END,START
+from langgraph.graph import StateGraph, END, START
+
+# from langgraph_studio import start_trace_server
 
 load_dotenv()
 
@@ -120,15 +122,16 @@ if __name__ == "__main__":
         print(f"- {rec}")
 
 
+# for Graph bulding
 
-try:
-    png_data = app.get_graph().draw_mermaid_png()
+# try:
+#     png_data = app.get_graph().draw_mermaid_png()
     
-    # Save to file
-    with open("output_graph.png", "wb") as f:
-        f.write(png_data)
+#     # Save to file
+#     with open("output_graph.png", "wb") as f:
+#         f.write(png_data)
     
-    # Optionally display in notebook
-    display(Image(png_data))
-except Exception as e:
-    print(f"Error generating image: {e}")
+#     # Optionally display in notebook
+#     display(Image(png_data))
+# except Exception as e:
+#     print(f"Error generating image: {e}")
