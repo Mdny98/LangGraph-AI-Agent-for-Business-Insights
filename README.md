@@ -4,7 +4,7 @@
 
 This project is a simple AI agent that analyzes basic business data (e.g., daily revenue, costs, and customers) using the **LangGraph** framework.
 
-The agent:
+The agent can:
 - 📈 Calculates daily profit
 - 📉 Detects changes in revenue, cost, and CAC (Customer Acquisition Cost)
 - 🤖 Provides actionable recommendations to improve business decisions
@@ -113,3 +113,4 @@ Run tests with:
 uv pip install pytest
 pytest src/
 ```
+
